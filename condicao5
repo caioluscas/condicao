@@ -1,0 +1,42 @@
+/*
+	Name: Caio Lucas Lima Almeida 
+	Date: 23/03/21 
+	Description: Faça um Programa que leia três números e mostre o maior e o menor deles
+*/
+#include<stdio.h>
+#include<locale.h>
+
+	main()
+	{
+		float n1,n2,n3;
+		setlocale(LC_ALL,"portuguese");
+			printf("diga seu número: ");
+		scanf("%f",&n1);
+		printf("diga seu segundo número: ");
+		scanf("%f",&n2);
+			printf("diga seu terceiro número: ");
+		scanf("%f",&n3);
+		if(n1>n2 && n1>n3)
+		{printf("O %.2f é o maior número",n1);
+		}
+		else
+		if(n2>n1 && n2>n3)
+		{printf("O %.2f é o maior número",n2);
+		}
+		else
+		if(n3>n1 && n3>n1)
+		{printf("O %.2f é o maior número",n3);
+		}
+		if(n1<n2 && n1<n3)
+		{printf("\nO %.2f é o menor número",n1);
+		}
+		else
+		if(n2<n1 && n2<n3)
+		{printf("\nO %.2f é o menor número",n2);
+		}
+		else
+		if(n3<n1 && n3<n1)
+		{printf("\nO %.2f é o menor número",n3);
+		}
+		
+	}
