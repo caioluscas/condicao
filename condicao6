@@ -1,0 +1,31 @@
+	/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 23/03/21 
+		Description: Faça um programa que pergunte o preço de três produtos e informe qual produto você deve 
+	comprar, sabendo que a decisão é sempre pelo mais barato.
+	*/
+	#include<stdio.h>
+	#include<locale.h>
+	
+		main()
+		{
+			float n1,n2,n3;
+			setlocale(LC_ALL,"portuguese");
+				printf("diga o preço do produto 1: ");
+			scanf("%f",&n1);
+			printf("diga o preço do produto 2: ");
+			scanf("%f",&n2);
+				printf("diga o preço do produto 3: ");
+			scanf("%f",&n3);
+			if(n1<n2 && n1<n3)
+			{printf("\n Você deveria comprar o produto de R$%.2f ",n1);
+			}
+			else
+			if(n2<n1 && n2<n3)
+			{printf("\nVocê deveria comprar o produto de R$%.2f",n2);
+			}
+			else
+			if(n3<n1 && n3<n1)
+			{printf("\nVocê deveria comprar o produto de R$%.2f",n3);
+			}
+		}
