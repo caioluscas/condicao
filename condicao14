@@ -1,0 +1,24 @@
+/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 27/03/21 
+		Description: Faça um Programa que peça um número correspondente a um determinado ano e em seguida 
+informe se este ano é ou não bissexto.
+	
+	*/
+	#include<stdio.h>
+	#include<locale.h>
+	#include<math.h>
+		main()
+		{ 
+			int a;
+			setlocale(LC_ALL,"portuguese");
+			printf("Diga o ano: ");
+			scanf("%d",a);
+			if ((a%4)==0)
+			{printf("O ano ano é bissexto");
+			}
+			else
+			{printf("O ano não é bissexto");
+			}
+		}
+			
