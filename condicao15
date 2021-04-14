@@ -1,0 +1,26 @@
+/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 27/03/21 
+		Description: Faça um Programa que leia um número inteiro menor que 1000 e imprima a quantidade de 
+centenas, dezenas e unidades do mesmo.
+	
+	*/
+  //alguem me ajuda a terminar pvr
+	#include<stdio.h>
+	#include<locale.h>
+	
+		main()
+		{ 
+			int a,un,cen,dez;
+			setlocale(LC_ALL,"portuguese");
+			printf("diga sua nota:");
+			scanf("%d",&a);
+		cen=a/100; //exemplo: 123 vira 1
+		dez=a%100; //o "%" serve para mostrar o resto: 23
+		un=dez%10; //o resto da divisão 23/10: 3
+		dez=dez/10;//divide 23 por 10: 2
+		 
+			if (a<1000)
+			{printf("Unidade: %d, dezena: %d, centena: %d",un,dez,cen);
+			}
+	}
