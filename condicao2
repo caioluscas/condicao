@@ -1,0 +1,19 @@
+/*
+	Name: Caio Lucas Lima Almeida
+	Date: 24/03/21 
+	Description: Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+*/
+#include<stdio.h>
+	#include<locale.h>
+	main(){
+		int n1;
+		setlocale(LC_ALL,"Portuguese");
+		printf("digite um número: ");
+		scanf("%d",&n1);
+		if (n1>=0)
+		{printf("O número %d é positivo",n1);
+		 } 
+		 else
+		 {printf("o número %d é negativo",n1);
+		 }
+	}
