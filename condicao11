@@ -1,0 +1,40 @@
+	/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 27/03/21 
+		Description: Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo 
+de um semestre, e calcule a sua média. A atribuição de conceitos obedece à tabela abaixo:
+	
+		*/
+		#include<stdio.h>
+		#include<locale.h>
+		
+			main()
+			{ 
+				float n1,n2,m;
+				setlocale(LC_ALL,"portuguese");
+				printf("diga sua nota: ");
+			scanf("%f",&n1);
+			printf("diga sua segunda nota: ");
+			scanf("%f",&n2);
+			m=(n1+n2)/2;
+			printf("%f\n",m);
+			
+			if (m>9)
+			{printf("A");
+			}
+			else
+			if (m>7.5 && m<=9)
+			{printf("B");
+			}
+			else
+			if (m>6 && m<=7.5)
+			{printf("C");
+			}
+			else
+			if (m>4 && m<=6)
+			{printf("D");
+			}
+			else
+			{printf("E");
+			}
+		}
