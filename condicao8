@@ -1,0 +1,38 @@
+	/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 27/03/21 
+		Description: As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe 
+	contraram para desenvolver o programa que calculará os reajustes.
+	
+	*/
+	#include<stdio.h>
+	#include<locale.h>
+	
+		main()
+		{ 
+			float sal,r,au,nsal;
+			setlocale(LC_ALL,"portuguese");
+			printf("diga seu salário: ");
+			scanf("%f",&sal);
+			if(sal<=280)
+			{r=20;
+			}
+			else
+			if(sal>=280 && sal<=700)
+			{r=15;
+			}
+			else
+			if(sal>=700 && sal<=1500)
+			{r=10;
+			}
+			else
+			{r=5;
+			}
+			printf("O salário antes do reajuste era R$%.2f \n",sal);
+		printf("Aumento aplicado de %.2f%% \n",r);
+			au=sal*(r/100);
+			printf("O valor do aumento foi de R$%.2f \n",au);
+			nsal=sal+au;
+			printf("Novo salário é R$%.2f \n",nsal);
+		}
+			
