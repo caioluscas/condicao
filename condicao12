@@ -1,0 +1,37 @@
+/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 29/03/21 
+		Description: Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os 
+valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: 
+equilátero, isósceles ou escaleno.
+
+	*/
+	#include<stdio.h>
+	#include<locale.h>
+	#include <stdlib.h>
+		main()
+		{ 
+			int n1,n2,n3;
+			setlocale(LC_ALL,"portuguese");
+			printf("Digite seu l1:");
+			scanf("%d",&n1);
+			printf("Digite seu l2:");
+			scanf("%d",&n2);
+			printf("Digite seu l3:");
+			scanf("%d",&n3);
+			if (n1>(n2+n3) || n2>(n1+n3) || n3>(n1+n2))
+			{printf("Não pode ser um triangulo");
+			exit(0);
+			}
+			else
+			if(n1==n2==n3)
+			{printf("Equilatero");
+			}
+			else
+			if(n1==n2 || n1==n3 || n2==n3)
+			{printf("Isósceles");
+			}
+			else
+			{printf("Escaleno");
+			}
+		}
