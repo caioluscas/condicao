@@ -1,0 +1,31 @@
+/*
+	Name: Caio Lucas Lima Almeida 
+	Date: 25/03/21 14:26
+	Description: Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular 
+a média alcançada do aluno e apresentar:
+*/
+#include<stdio.h>
+#include<locale.h>
+
+	main()
+	{
+		float n1,n2,m;
+		setlocale(LC_ALL,"portuguese");
+		printf("diga sua nota: ");
+		scanf("%f",&n1);
+		printf("diga sua segunda nota: ");
+		scanf("%f",&n2);
+		m=(n1+n2)/2;
+		if(m>=7)
+		{printf("Aprovado");
+		}
+		else
+		if(m<7)
+		{printf("Reprovado");
+		}
+		else
+		if(m=10)
+		{printf("Aprovado");
+		}
+		}
+	
