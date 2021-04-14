@@ -1,0 +1,45 @@
+/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 27/03/21 
+		Description: Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + 
+c. O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao 
+usuário nas seguintes situações:
+	
+	*/
+	#include<stdio.h>
+	#include<locale.h>
+	#include <stdlib.h>
+	#include <math.h>
+	
+		main()
+		{ 
+			int a,b,c,x;
+			float d,r1,r2;
+			setlocale(LC_ALL,"portuguese");
+			printf("Digite seu número:");
+			scanf("%d",&a);
+			printf("Digite seu número:");
+			scanf("%d",&b);
+			printf("Digite seu número:");
+			scanf("%d",&c);
+			if(a==0)
+			{printf("Não pode ser uma raiz de segundo grau");
+		exit(0);
+			}
+			else
+			d=pow(b,2)-4*a*c;
+			if(d<0)
+			{printf("Equação não possui raizes reais");
+			}
+			r1=(-b+(sqrt(d)))/(2*a);
+			r1=(-b-(sqrt(d)))/(2*a);
+			if (d==0)
+			{
+			printf("equação possui apenas uma raiz real positiva: %.2f",r1);}
+			else
+			if (d>0)
+			{printf("\nRaiz real 1: %.2f",r1);
+			printf("\nRaiz real 2: %.2f",r2);
+			}
+			
+		}
