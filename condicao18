@@ -1,0 +1,23 @@
+	/*
+		Name: Caio Lucas Lima Almeida 
+		Date: 30/03/21 
+		Description: Faça um Programa que peça um número inteiro e determine se ele é par ou impar. Dica: utilize o 
+operador módulo (resto da divisão) ex:: x % 2 == 0.
+		*/
+		#include<stdio.h>
+		#include<locale.h>
+		
+			main()
+			{ 
+				int n1;
+				setlocale(LC_ALL,"portuguese");
+				printf("diga sua nota: ");
+			scanf("%d",&n1);
+			if(n1%2==0)
+			{printf("É par");
+			}
+			else
+			{printf("Impar");
+			}
+		}
+			
